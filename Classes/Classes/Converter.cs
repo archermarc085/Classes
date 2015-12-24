@@ -9,7 +9,7 @@ namespace Classes
 {
     class Converter
     {
-                #region Fields
+        #region Fields
         double sum = 0;
 
         //CultureInfo ua = new CultureInfo("uk-UA");
