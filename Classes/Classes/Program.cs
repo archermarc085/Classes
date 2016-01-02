@@ -32,14 +32,13 @@ namespace Classes
             //Task 3
             Book book = new Book("Programming","Troelsen","C#");
             book.Show();
-
+            Console.ResetColor();
             //Task 4
-            Point []  p = new Point[3];
-            p[0] = new Point(1,4);
-            p[1] = new Point(6,3);
-            p[2] = new Point(3,1);
-            
-            Figure figure = new Figure(p);
+            Point A = new Point(1, 2);
+            Point B = new Point(2, 1);
+            Point C = new Point(3, 2);
+
+            Figure figure = new Figure(A, B, C);
             figure.Display();
             
 

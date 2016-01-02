@@ -23,26 +23,32 @@ namespace Classes
         #endregion
 
         #region Constructors
-        public Figure(Point[] massive)
-        {
-            array = new Point[massive.GetLength(0)];
-            Array.Copy(massive, array, massive.GetLength(0));
-            this.Name = massive[0].Name;
-        }
         public Figure(Point A, Point B, Point C)
         {
             array = new Point[3];
-            this.Name = Name;
+            array[0] = A;
+            array[1] = B;
+            array[2] = C;
+            this.Name = A.Name;
         }
         public Figure(Point A, Point B, Point C, Point D)
         {
             array = new Point[4];
-            this.Name = Name;
+            array[0] = A;
+            array[1] = B;
+            array[2] = C;
+            array[3] = D;
+            this.Name = A.Name;
         }
         public Figure(Point A, Point B, Point C, Point D, Point E)
         {
             array = new Point[5];
-            this.Name = Name;
+            array[0] = A;
+            array[1] = B;
+            array[2] = C;
+            array[3] = D;
+            array[4] = E;
+            this.Name = A.Name;
         }
         #endregion
 
